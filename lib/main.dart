@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:portfolio/features/app/presentation/pages/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,23 +29,7 @@ class MyApp extends StatelessWidget {
         Locale('en'),
         Locale('fr'),
       ],
-      home: const Home(),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.helloWorld),
-      ),
-      body: Center(
-        child: Container(),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
