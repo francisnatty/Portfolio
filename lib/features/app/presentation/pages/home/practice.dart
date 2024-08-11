@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class MyStateWidget extends InheritedWidget {
   const MyStateWidget({
-    Key? key,
+    super.key,
     required this.data,
-    required Widget child,
-  }) : super(key: key, child: child);
+    required super.child,
+  });
 
   final int data;
 
