@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/core/constants/theme/custom_theme.dart';
 import 'package:portfolio/core/custom_widgets/size_config.dart';
+import 'package:portfolio/features/app/presentation/pages/home/home_screen.dart';
 import 'package:portfolio/features/app/presentation/pages/home/practice.dart';
+import 'package:portfolio/features/app/presentation/pages/home/project_details.dart';
 import 'package:portfolio/features/app/presentation/pages/qualification.dart';
 import 'package:provider/provider.dart';
 
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
       //   Locale('en'),
       //   Locale('fr'),
       // ],
-      home: const Qualification(),
+      home: const ProjectDetails(),
     );
   }
 }

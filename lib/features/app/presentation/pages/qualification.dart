@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:portfolio/core/constants/colors.dart';
 import 'package:portfolio/core/custom_widgets/size_config.dart';
-
 import 'package:portfolio/core/custom_widgets/spacing.dart';
 
 class Qualification extends StatelessWidget {
@@ -21,17 +20,15 @@ class Qualification extends StatelessWidget {
               const Hspacing(height: 10),
               Text(
                 'My Qualification',
-                style: Theme.of(context).textTheme.displayLarge!.copyWith(
-                      fontFamily: 'QuietSans',
-                    ),
+                style: theme.displayLarge!.copyWith(
+                  fontFamily: 'QuietSans',
+                ),
               ),
               const Hspacing(height: 15),
               Row(
                 children: [
-                  Icon(
-                    Iconsax.activity,
-                    size: getProportionateScreenHeight(25),
-                  ),
+                  Icon(Iconsax.activity,
+                      size: getProportionateScreenHeight(25)),
                   const Wspacing(width: 5),
                   Text(
                     'Experience',
@@ -44,7 +41,7 @@ class Qualification extends StatelessWidget {
                 child: ListView.separated(
                     shrinkWrap: true,
                     separatorBuilder: (context, index) {
-                      return Hspacing(height: 20);
+                      return const Hspacing(height: 20);
                     },
                     itemCount: exp.length,
                     itemBuilder: (context, index) {
