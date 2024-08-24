@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/constants/colors.dart';
-import 'package:portfolio/core/constants/theme/app_styles.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});
@@ -61,7 +60,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                                 padding: const EdgeInsets.all(16),
                                 child: Text(
                                   drawerItems[index],
-                                  style: AppStyles.of(context).buttonBold30,
+                                  // style: AppStyles.of(context).buttonBold30,
                                 ),
                               ),
                             )
@@ -78,7 +77,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                                   padding: const EdgeInsets.all(16),
                                   child: Text(
                                     drawerItems[index],
-                                    style: AppStyles.of(context).buttonBold30,
+                                    // style: AppStyles.of(context).buttonBold30,
                                   ),
                                 ),
                               ),

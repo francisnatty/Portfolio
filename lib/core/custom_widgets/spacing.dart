@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio/core/custom_widgets/size_config.dart';
 
 abstract class Spacing extends StatelessWidget {
@@ -15,7 +16,7 @@ class Hspacing extends Spacing {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: getProportionateScreenHeight(height),
+      height: height.h,
     );
   }
 }
@@ -27,8 +28,6 @@ class Wspacing extends Spacing {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: getProportionateScreenWidth(width),
-    );
+    return SizedBox(width: width.h);
   }
 }
