@@ -12,4 +12,8 @@ class AppImages {
   String get deFour => '${dezirely}de-four.webp';
   String get deFive => '${dezirely}de-five.webp';
   String get deSix => '${dezirely}de-six.webp';
+
+  String get lawOne => '${lawvee}law-three.jpg';
+  String get lawTwo => '${lawvee}law-two.jpg';
+  String get lawThree => '${lawvee}law-one.jps';
 }

@@ -7,14 +7,14 @@ import 'package:portfolio/core/custom_widgets/size_config.dart';
 import 'package:portfolio/core/custom_widgets/spacing.dart';
 import 'package:portfolio/core/responsive/screen_info.dart';
 
-class ProjectDetails1 extends StatefulWidget {
-  const ProjectDetails1({super.key});
+class ProjectDetails extends StatefulWidget {
+  const ProjectDetails({super.key});
 
   @override
-  State<ProjectDetails1> createState() => _ProjectDetails1State();
+  State<ProjectDetails> createState() => _ProjectDetailsState();
 }
 
-class _ProjectDetails1State extends State<ProjectDetails1> {
+class _ProjectDetailsState extends State<ProjectDetails> {
   @override
   Widget build(BuildContext context) {
     return const ProjectDetailsPhone();

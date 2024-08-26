@@ -28,7 +28,8 @@ ThemeData lightTheme = ThemeData(
     textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
             textStyle: WidgetStateProperty.all(
-      const TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
+      const TextStyle(
+          fontWeight: FontWeight.w800, fontSize: 16, fontFamily: 'QuietSans'),
     ))),
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.de.primaryColor),
     iconTheme: IconThemeData(
@@ -36,6 +37,7 @@ ThemeData lightTheme = ThemeData(
     ));
 
 ThemeData darkTheme = ThemeData(
+    fontFamily: 'QuietSans',
     textTheme: const TextTheme(
       displayLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
       bodyLarge: TextStyle(

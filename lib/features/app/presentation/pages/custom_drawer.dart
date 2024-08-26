@@ -35,6 +35,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
           child: Center(
             child: Column(
               // mainAxisAlignment: Main,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(
                   height: 40,
@@ -60,7 +62,6 @@ class _CustomDrawerState extends State<CustomDrawer> {
                                 padding: const EdgeInsets.all(16),
                                 child: Text(
                                   drawerItems[index],
-                                  // style: AppStyles.of(context).buttonBold30,
                                 ),
                               ),
                             )
