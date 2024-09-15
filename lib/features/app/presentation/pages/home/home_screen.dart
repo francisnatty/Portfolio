@@ -3,14 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/core/constants/global_var.dart';
 import 'package:portfolio/features/app/presentation/pages/custom_drawer.dart';
 import 'package:portfolio/features/app/presentation/pages/home/project_details.dart';
 import 'package:portfolio/features/app/presentation/widgets/custom_widgets/curved_container.dart';
-
 import '../../../../../core/constants/constants.dart';
 import '../../../../../core/custom_widgets/spacing.dart';
-import '../../../../../core/responsive/screen_info.dart';
 import '../../../../../main.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -106,7 +103,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   : GridView.builder(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      // padding: EdgeInsets.only(left: 100.w, right: 100.w),
                       gridDelegate:
                           const SliverGridDelegateWithMaxCrossAxisExtent(
                         maxCrossAxisExtent: 400,
